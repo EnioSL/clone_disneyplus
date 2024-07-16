@@ -2,4 +2,8 @@
     padding: 5.6vw;
     min-height: 80vw;
     background-image: url(../images/hero_desktop.jpeg);
+
+    &__content {
+        max-width: 640px;
+    }
 }

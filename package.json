@@ -169,5 +169,13 @@
     "yargs": "^16.2.0",
     "yargs-parser": "^20.2.9"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EnioSL/clone_disneyplus.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EnioSL/clone_disneyplus/issues"
+  },
+  "homepage": "https://github.com/EnioSL/clone_disneyplus#readme",
   "description": ""
 }

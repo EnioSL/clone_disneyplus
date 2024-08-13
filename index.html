@@ -7,11 +7,26 @@
     <link rel="stylesheet" href="dist/css/main.css">
 </head>
 <body>
+    <header class="header">
+        <div class="header__container">
+            <h1>
+                <img class="header__logo" src="./dist/images/disneyplus.svg" alt="Disney+">
+            </h1>
+            <ul class="header__links">
+                <li class="header__links__item">
+                    <a href="#" class="button button--secondary">Assine agora</a>
+                </li>
+                <li class="header__links__item">
+                    <a href="#" class="button button--dark">Entrar</a>
+                </li>
+            </ul>
+        </div>
+    </header>
     <section class="hero">
         <div class="hero__content">
-            <h1 class="hero__content__branding">
+            <div class="hero__content__branding">
                 <img src="./dist/images/disneyplus.svg" alt="Disney+">
-            </h1>
+            </div>
             <h3 class="title--small">
                 As melhores histórias em um só lugar.
             </h3>
@@ -41,7 +56,7 @@
     </section>
     <section class="shows">
         <nav class="shows__tabs">
-            <button data-tab-button="em_breve" class="shows__tabs__button shows__tabs__button--is--active">
+            <button data-tab-button="em_breve" class="shows__tabs__button shows__tabs__button--is-active">
                 Em breve
             </button>
             <button data-tab-button="populares" class="shows__tabs__button">
@@ -51,52 +66,52 @@
                 Mais no Star+
             </button>
         </nav>
-        <ul data-tab-id="em_breve" class="shows__list shows__list--is--active">
-            <li class="shows__list_item">
-                <img src="./dist/images/em_breve/spidey.jpg" alt="Spydey">
+        <ul data-tab-id="em_breve" class="shows__list shows__list--is-active">
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/desencantada.jpg" alt="Desencantada">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/willow.jpg" alt="Willow">
             </li>
             <li class="shows__list_item">
+                <img src="./dist/images/em_breve/lobisomem.jpg" alt="Lobisomem na noite">
+            </li>
+            <li class="shows__list__item">
                 <img src="./dist/images/em_breve/spidey.jpg" alt="Spydey">
             </li>
-            <li class="shows__list_item">
-                <img src="./dist/images/em_breve/spidey.jpg" alt="Spydey">
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/the_santa_clauses.jpg" alt="Santa Clauses">
             </li>
-            <li class="shows__list_item">
-                <img src="./dist/images/em_breve/spidey.jpg" alt="Spydey">
-            </li>
-            <li class="shows__list_item">
-                <img src="./dist/images/em_breve/spidey.jpg" alt="Spydey">
-            </li>
-            <li class="shows__list_item">
-                <img src="./dist/images/em_breve/spidey.jpg" alt="Spydey">
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/sem_limites.jpg" alt="Sem limites">
             </li>
         </ul>
         <ul data-tab-id="populares" class="shows__list">
-            <li class="shows__list_item">
+            <li class="shows__list__item">
                 <img src="./dist/images/mais_populares/obi_wan.jpg" alt="Obi Wan">
             </li>
-            <li class="shows__list_item">
+            <li class="shows__list__item">
                 <img src="./dist/images/em_breve/spidey.jpg" alt="Spydey">
             </li>
-            <li class="shows__list_item">
+            <li class="shows__list__item">
                 <img src="./dist/images/em_breve/spidey.jpg" alt="Spydey">
             </li>
-            <li class="shows__list_item">
+            <li class="shows__list__item">
                 <img src="./dist/images/em_breve/spidey.jpg" alt="Spydey">
             </li>
-            <li class="shows__list_item">
+            <li class="shows__list__item">
                 <img src="./dist/images/em_breve/spidey.jpg" alt="Spydey">
             </li>
-            <li class="shows__list_item">
+            <li class="shows__list__item">
                 <img src="./dist/images/em_breve/spidey.jpg" alt="Spydey">
             </li>
         </ul>
-        <ul data-tab-id="mais_star_plus" class="shows__list">
+        <ul data-tab-id="star_plus" class="shows__list">
             <li class="shows__list_item">
                 <img src="./dist/images/mais_no_star_plus/libertadores.jpg" alt="Libertadores">
             </li>
             <li class="shows__list_item">
-                <img src="./dist/images/mais_no_star_plus/libertadores.jpg" alt="Spydey">
+                <img src="./dist/images/mais_no_star_plus/libertadores.jpg" alt="Libertadores">
             </li>
             <li class="shows__list_item">
                 <img src="./dist/images/em_breve/spidey.jpg" alt="Spydey">
@@ -154,7 +169,10 @@
         </div>
     </section>
     <section class="image-text-section image-text-section--image-full-width">
-        <img src="./dist/images/fundo_rei_leao.png" alt="Rei Leão">
+        <picture>
+            <source media="(max-width: 768px)" srcset="./dist/images/fundo_rei_leao_celular.png" />
+            <img src="./dist/images/fundo_rei_leao.png" alt="Rei Leão">
+        </picture>
         <div class="image-text-section__text_container image-text-section--image-full-width__text_container">
             <h2 class="title">Baixe filmes e séries</h2>
             <p class="text--big">
@@ -167,7 +185,7 @@
         <ul class="available-devices__list">
             <li class="available-devices__list__item">
                 <img src="./dist/images/dispositivos/computador.png" alt="Computador">
-                <h4 class="tilte--small">Computador</h4>
+                <h4 class="title--small">Computador</h4>
                 <ul class="text">
                     <li>Chrome OS</li>
                     <li>Mac OS</li>
@@ -176,7 +194,7 @@
             </li>
             <li class="available-devices__list__item">
                 <img src="./dist/images/dispositivos/tv.png" alt="Computador">
-                <h4 class="tilte--small">TV</h4>
+                <h4 class="title--small">TV</h4>
                 <ul class="text">
                     <li>Amazon Fire TV</li>
                     <li>Android TV</li>
@@ -189,7 +207,7 @@
             </li>
             <li class="available-devices__list__item">
                 <img src="./dist/images/dispositivos/videogames.png" alt="Computador">
-                <h4 class="tilte--small">Videogames</h4>
+                <h4 class="title--small">Videogames</h4>
                 <ul class="text">
                     <li>PS4</li>
                     <li>PS5</li>
@@ -200,7 +218,7 @@
             </li>
             <li class="available-devices__list__item">
                 <img src="./dist/images/dispositivos/celular.png" alt="Computador">
-                <h4 class="tilte--small">Celulares e Tablets</h4>
+                <h4 class="title--small">Celulares e Tablets</h4>
                 <ul class="text">
                     <li>Tablets Amazon Fire</li>
                     <li>Celulares e Tablets Android</li>
@@ -209,6 +227,144 @@
             </li>
         </ul>
     </section>
+    <section class="faq">
+        <h2 class="title">Perguntas frequentes</h2>
+        <ul class="faq__questions">
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    O que está incluído no Disney+?
+                </div>
+                <div class="faq__questions__item__answer text--big">                    
+                    O Disney+ oferece:
+                    <ul class="faq__questions__item__answer text--big text--subItem">
+                        <li>
+                            Experiência premium sem intervalos comerciais.
+                        </li>
+                        <li>
+                            As melhores histórias da Disney, Pixar, Marvel, Star Wars e National Geographic, tudo em um só lugar.
+                        </li>
+                        <li>
+                            Groupwatch: assista junto com amigos ou familiares, mesmo separados.
+                        </li>
+                        <li>
+                            Download ilimitados em até 10 dispositivos compatíveis.                                                    
+                        </li>
+                        <li>
+                            Mais de 300 títulos em 4k UHD e HDR.                                  
+                        </li>
+                        <li>
+                            Apossibilidade de assistir em até 4 dispositivos compatíveis simultaneamente sem custo adicional.                                
+                        </li>
+                        <li>
+                            IMAX Enhanced: disponível para alguns títulos da Marvel em dispositívos compatíveis com o Disney+.
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    Já tem o Disney+ ou o Star+ e quer o Combo+?
+                </div>
+                <div class="faq__questions__item__answer text--big">                    
+                    O Disney+ oferece
+                    <ul class="faq__questions__item__answer text--big text--subItem">
+                        <li>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga nemo eligendi, tenetur temporibus id assumenda.
+                        </li>
+                        <li>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga nemo eligendi, tenetur temporibus id assumenda.
+                        </li>
+                        <li>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga nemo eligendi, tenetur temporibus id assumenda.
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    Quais formas de pagamento utilizar?
+                </div>
+                <div class="faq__questions__item__answer text--big">                    
+                    O Disney+ oferece
+                    <ul class="faq__questions__item__answer text--big text--subItem">
+                        <li>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga nemo eligendi, tenetur temporibus id assumenda.
+                        </li>
+                        <li>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga nemo eligendi, tenetur temporibus id assumenda.
+                        </li>
+                        <li>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga nemo eligendi, tenetur temporibus id assumenda.
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    Como posso ver conteúdo com classificação indicativa até 16 e 18?
+                </div>
+                <div class="faq__questions__item__answer text--big">                    
+                    O Disney+ oferece
+                    <ul class="faq__questions__item__answer text--big text--subItem">
+                        <li>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga nemo eligendi, tenetur temporibus id assumenda.
+                        </li>
+                        <li>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga nemo eligendi, tenetur temporibus id assumenda.
+                        </li>
+                        <li>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga nemo eligendi, tenetur temporibus id assumenda.
+                        </li>
+                    </ul>
+                </div>
+            </li>            
+        </ul>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <img class="footer__logo" src="./dist/images/disneyplus.svg" alt="">
+            <ul class="footer__links">
+                <li class="footer__links__item">
+                    <div class="language-selector">
+                        <img src="./dist/images/icones/globe.svg" alt="Globo do mundo">
+                        <select>
+                            <option>English</option>
+                            <option selected>Português</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Termos e Condições de Uso</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Política de privacidade</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Proteção de Dados no Brasil</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Anúncios Personalizados</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Dispositivos compatíveis</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Ajuda</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Sobre o Disney+</a>
+                </li>
+            </ul>
+            <p class="text--small">
+                © 2022 Disney, Disney+ e The Walt Disney Company. Todos os direitos reservados. Serviço de assinatura paga. Conteúdo sujeito a disponibilidade.
+            </p>
+            <p class="text--small">
+                Disney+ é um serviço pago, baseado em assinatura e sujeito a termos e condições. O serviço Disney+ é comercializado por The Walt Disney Company (Brasil) Ltda., World Trade Center, Av. Das Nações Unidas, 12.551, 12.555, 12.559, Piso 10, São paulo/SP - CEP 04578-903, Brasil e CNPJ/M 73.042.962/0004-20
+            </p>
+        </div>
+    </footer>
+
 
     <script src="./src/main.js"></script>
 </body>

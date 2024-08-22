@@ -30,7 +30,7 @@
         display: flex;
         justify-content: center;
 
-        @media (max-width:768) {
+        @media (max-width:768px) {
             white-space: nowrap;
             overflow-x: scroll;
             padding-left: 20px;
@@ -51,7 +51,7 @@
                 border-color: variaveis.$corTextoSecundario;
             }
 
-            @media (max-width:768) {
+            @media (max-width:768px) {
                 font-size: 16px;
             }
         }
